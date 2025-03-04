@@ -1,6 +1,8 @@
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+
 const page = () => {
     return (
-      <h1 className="title">DApp</h1>
+        <h1 className="title">DApp</h1>
     )
   }
   

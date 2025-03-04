@@ -1,3 +1,4 @@
+import CustomRainbowKitProvider from "./CustomRainbowKitProvider"
 import "./globals.css"
 import Layout from "@/components/shared/Layout"
 import { Inter as FontSans } from "next/font/google"
@@ -16,18 +17,32 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head />
-      <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
-        )}
-      >
-        <Layout>
-          {children}
-        </Layout>
+    <html lang="en">
+      <body>
+        <CustomRainbowKitProvider>
+          <Layout>
+            {children}
+          </Layout>
+        </CustomRainbowKitProvider>
       </body>
     </html>
   )
 }
+
+// export default function RootLayout({ children }) {
+//   return (
+//     <html lang="en" suppressHydrationWarning>
+//       <head />
+//       <body
+//         className={cn(
+//           "min-h-screen bg-background font-sans antialiased",
+//           fontSans.variable
+//         )}
+//       >
+//         <Layout>
+//           {children}
+//         </Layout>
+//       </body>
+//     </html>
+//   )
+// }

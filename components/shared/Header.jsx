@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { ConnectButton } from '@rainbow-me/rainbowkit'
 
 const Header = () => {
   return (
@@ -10,6 +11,7 @@ const Header = () => {
             <Link href="/contact">Contact</Link>
             <Link href="/dapp">DApp</Link>
         </div>
+        <ConnectButton />
     </nav>
   )
 }
