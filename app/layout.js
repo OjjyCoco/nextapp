@@ -3,7 +3,7 @@ import "./globals.css"
 import Layout from "@/components/shared/Layout"
 import { Inter as FontSans } from "next/font/google"
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils" // shadcn
 
 const fontSans = FontSans({
   subsets: ["latin"],
