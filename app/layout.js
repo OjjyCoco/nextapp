@@ -11,7 +11,7 @@ const fontSans = FontSans({
 
 export const metadata = {
   title: "NathanB",
-  description: "First DApp with Tailwind / Shadcn-UI",
+  description: "First DApp with Tailwind / Shadcn-UI", // Important pour le SEO
 };
 
 export default function RootLayout({ children }) {
